@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Rubric } from 'src/app/classes/rubric';
 
 @Component({
@@ -9,11 +9,16 @@ import { Rubric } from 'src/app/classes/rubric';
 export class FormContattiComponent implements OnInit {
   contact = new Rubric();
 
+  @Output() contactElement = new EventEmitter();
+
   constructor() {}
 
   ngOnInit(): void {}
 
-  showContact(): void {
-    console.log(this.contact.name, this.contact.lastname, this.contact.address);
+  addContact(elem: Rubric): void {
+    // console.log(this.contact.name, this.contact.lastname, this.contact.address);
+
+    console.log(elem);
+    this.contactElement.emit(elem);
   }
 }

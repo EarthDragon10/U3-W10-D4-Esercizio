@@ -4,7 +4,7 @@
     </div>
     <div class="row">
         <div class="col">
-            <app-list-contacts></app-list-contacts>
+            <app-list-contacts (contactElement)="addItem($event)"></app-list-contacts>
         </div>
         <div class="col">
             <app-detail-contact></app-detail-contact>
