@@ -1,0 +1,5 @@
+#form-contact {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10rem 0;
+}
