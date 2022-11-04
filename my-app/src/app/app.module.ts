@@ -6,9 +6,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
+import { FormContactComponent } from './main/form-contact/form-contact.component';
+import { ListContactsComponent } from './main/list-contacts/list-contacts.component';
+import { DetailContactComponent } from './main/detail-contact/detail-contact.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, MainComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, MainComponent, FormContactComponent, ListContactsComponent, DetailContactComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
