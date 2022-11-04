@@ -15,10 +15,9 @@ export class FormContattiComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  addContact(elem: Rubric): void {
-    // console.log(this.contact.name, this.contact.lastname, this.contact.address);
+  addContact(): void {
+    console.log(this.contact.name, this.contact.lastname, this.contact.address);
 
-    console.log(elem);
-    this.contactElement.emit(elem);
+    this.contactElement.emit(this.contact);
   }
 }
