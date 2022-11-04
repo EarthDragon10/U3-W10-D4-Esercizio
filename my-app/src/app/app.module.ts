@@ -22,7 +22,7 @@ import { DetailContactComponent } from './main/detail-contact/detail-contact.com
     DetailContactComponent,
     FormsModule,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
