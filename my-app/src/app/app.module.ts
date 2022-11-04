@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +12,16 @@ import { ListContactsComponent } from './main/list-contacts/list-contacts.compon
 import { DetailContactComponent } from './main/detail-contact/detail-contact.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, MainComponent, FormContactComponent, ListContactsComponent, DetailContactComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    MainComponent,
+    FormContactComponent,
+    ListContactsComponent,
+    DetailContactComponent,
+    FormsModule,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
